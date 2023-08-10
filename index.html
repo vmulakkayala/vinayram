@@ -3,7 +3,71 @@
 <head>
     <title>Vinay Ram Reddy</title>
 </head>
+<style>
+:root {
+	--anim-dur: 3s;
+}
+
+body {
+    font-family: "Courier New", Courier;
+    height: 100vh;
+    margin: 0px;
+	background-color: #121212;
+	color: #ff9900;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 5vw;
+}
+
+.c1, .c2, .c3 {
+	font-size: 4vw;
+}
+
+.c1 {
+    animation:dot1 var(--anim-dur) infinite;
+}
+
+@keyframes dot1 {
+    0%, 17%{     opacity: 0; }
+    18%{    opacity: 1; }
+}
+
+.c2 {
+    animation:dot2 var(--anim-dur) infinite;
+}
+
+@keyframes dot2 {
+    0%, 35%{     opacity: 0; }
+    36%{    opacity: 1; }
+}
+
+.c3 {
+    animation:dot3 var(--anim-dur) infinite;
+}
+
+@keyframes dot3 {
+    0%, 53%{     opacity: 0; }
+    54%{    opacity: 1; }
+}
+</style>
 <body>
-    <p>Vinay Ram Reddy's Home Page<p>
+    <div class="fill">
+        <div class="fill center">
+            <div>vinayram.com ></div>
+			<div class="c1">.</div>
+			<div class="c2">.</div>
+			<div class="c3">.</div>
+        </div>
+    </div>
 </body>
 </html>
